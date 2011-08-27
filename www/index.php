@@ -68,7 +68,7 @@ your R shell - or for Windows users with the RGui to click on <i>Packages
 -&gt; Install
 package(s)...</i> and select RNetLogo. This will install the
 version hosted on <a href="http://cran.r-project.org/web/packages/RNetLogo/index.html" target="_bank">CRAN</a>. The latest package version
-will be available here on <a href="https://r-forge.r-project.org/R/?group_id=1202">R-Forge</a>.
+will be available here on <a href="https://r-forge.r-project.org/R/?group_id=1202">R-Forge</a>. If you don't want to download it manually you can type <i>install.packages("RNetLogo", repos="http://R-Forge.R-project.org")</i> in your R shell.
 </p>
 
 </div>
