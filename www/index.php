@@ -177,7 +177,7 @@ UFZ, Department of Ecological Modelling, Leipzig, Germany.
 
 <div class="footer">
 <p class="lf">&copy; Copyright <a href="http://www.uni-goettingen.de/en/72779.html" target="_blank">Jan
-C. Thiele</a>.</p>
+C. Thiele</a>, <a href="impress.php" onClick="return (false);">Impress</a></p>
 
 <p class="rf">Layout by Cool <a href="http://www.coolwebtemplates.net/">Website Templates</a></p>
 
