@@ -48,18 +48,18 @@ two worlds are yours</small></h1>
 
 <p>Jan C. Thiele</p>
 
-<p>Department Ecoinformatics, Biometrics and Forest Growth</p>
+<p>Department of Ecoinformatics, Biometrics and Forest Growth</p>
 
-<p>University of Goettingen</p>
+<p>University of G&ouml;ttingen</p>
 
 <p>B&uuml;sgenweg 4</p>
 
-<p>37077 Goettingen, Germany</p>
+<p>37077 G&ouml;ttingen, Germany</p>
 
 <p>Contact: jthiele at gwdg dot de</p>
 
 <p>
-Copyright &copy; 2010 by
+Copyright &copy; 2011 by
 <a href="http://www.uni-goettingen.de/de/72779.html" target="_blank">Jan C. Thiele</a>
 </p>
 
