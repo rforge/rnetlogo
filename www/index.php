@@ -102,7 +102,7 @@ NetLogo models, don't hestitate to try the <a href="http://r-ext.sourceforge.net
 for NetLogo</a> and/or the <a href="http://rserve-ext.sourceforge.net">RServe-Extension</a>. 
 The latter is designed to work if you're using RNetLogo. The first
 one won't work in conjunction with RNetLogo.<br />
-See also our simulation software tools overview webpage at <a href="http://www.uni-goettingen.de/en/315075.html">http://uni-goettingen.de/en/315075.html</a>.
+See also our simulation software tools overview webpage at <a href="http://www.uni-goettingen.de/en/315075.html">http://www.uni-goettingen.de/en/315075.html</a>.
 </p>
 
 </div>
