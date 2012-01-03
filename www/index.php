@@ -98,11 +98,11 @@ A manuscript of a short overview article was submitted to <a href="http://www.me
 <div class="clr"></div>
 
 <p>If you are looking for the other way around, i.e. embed R into
-NetLogo models, don't hestitate to try the <a href="http://netlogo-r-ext.berlios.de/" target="_blank">R-Extension
-for NetLogo</a>.
-There are two different version: R-Extension and RServe-Extension. The
-latter is designed to work if you're using RNetLogo. The first
-one won't work in conjunction with RNetLogo.
+NetLogo models, don't hestitate to try the <a href="http://r-ext.sourceforge.net/" target="_blank">R-Extension
+for NetLogo</a> and/or the <a href="http://rserve-ext.sourceforge.net">RServe-Extension</a>. 
+The latter is designed to work if you're using RNetLogo. The first
+one won't work in conjunction with RNetLogo.<br />
+See also our simulation software tools overview webpage at <a href="http://uni-goettingen.de/en/315075.html">http://uni-goettingen.de/en/315075.html</a>.
 </p>
 
 </div>
