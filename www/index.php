@@ -81,13 +81,13 @@ will be available here on <a href="https://r-forge.r-project.org/R/?group_id=120
 <p>The first choice should always be the manual. All functions of
 the RNetLogo package come with a manual page. The complete manual as
 pdf is available on <a href="http://cran.r-project.org/web/packages/RNetLogo/index.html" target="_blank">CRAN</a>.
-Furthermore, there is a more than 30 pages tutorial, which comes with
-the package. Just browse to your installation path of the RNetLogo
+Furthermore, a more than 30 pages tutorial has been submitted to <a href="http://www.jstatsoft.org" target="_blank">Journal of Statistical Software</a>. Currently, it comes with the RNetLogo package. 
+Just browse to your installation path of the RNetLogo
 package and look into the folder <i>tutorial</i>.
 Moreover, there are code samples to all functions which can be found in
 the folder <i>examples/code_samples</i> in the
 installation path.
-A manuscript of a short overview article was accepted by <a href="http://www.methodsinecologyandevolution.org/view/0/index.html" target="_blank">Methods in Ecology and Evolution</a>.
+A manuscript of a short overview article was accepted by <a href="http://www.methodsinecologyandevolution.org/view/0/index.html" target="_blank">Methods in Ecology and Evolution</a>. 
 </p>
 
 </div>

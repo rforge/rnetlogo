@@ -5,6 +5,7 @@
 .rnetlogo[["libname"]] <- ""
 .rnetlogo[["pkgname"]] <- ""
 .rnetlogo[["nlversion"]] <- 0
+.rnetlogo[["nl3d"]] <- -1
 
 .onLoad <-
 function(libname, pkgname)
