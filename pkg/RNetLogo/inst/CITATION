@@ -21,7 +21,7 @@ citEntry(entry	="article",
 	)
 
 citEntry(entry	="article",
-	title 	= "R Meets NetLogo: Introduction to the RNetLogo Package",
+	title 	= "R Marries NetLogo: Introduction to the RNetLogo Package",
 	author 	= personList(
 			person(given="Jan C.", 	family="Thiele",	email="jthiele@gwdg.de")
 		),
@@ -34,6 +34,6 @@ citEntry(entry	="article",
 	
 	textVersion = 
 	paste("Thiele, J.C. (submitted): ",
-	      "R Meets NetLogo: Introduction to the RNetLogo Package, ",
+	      "R Marries NetLogo: Introduction to the RNetLogo Package, ",
 	      "Journal of Statistical Software.", sep="")
 	)
