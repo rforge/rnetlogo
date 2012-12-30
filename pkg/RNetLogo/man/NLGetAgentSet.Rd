@@ -43,7 +43,7 @@ NLGetAgentSet(agent.var, agentset, as.data.frame=TRUE,
   It's possible to use all variables of an agent, which can be found in NetLogo's Agent Monitors.
   It isn't possible to get values from different types of agents (i.e. turtles, patches, links) with one
   call of \code{NLGetAgentSet}.
-  See the document \code{performanceNotes.pdf} in directory \code{performanceNotes} in the installation directory of the package for performance details and notes on changes since version 0.9.3.
+  See the vignette \code{performanceNotes.pdf} for performance details and notes on changes since version 0.9.3.
 }
 \value{
   Returns a data.frame (optional a list) with the variable value(s) of an agent/agents of an agentset. 

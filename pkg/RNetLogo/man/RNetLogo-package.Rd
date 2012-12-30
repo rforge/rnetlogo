@@ -17,7 +17,7 @@ Mostly analogous to the NetLogo Mathematica Link
 Package: \tab RNetLogo\cr
 Type: \tab Package\cr
 Version: \tab 0.9.4\cr
-Date: \tab 2012-12-30\cr
+Date: \tab 2012-12-31\cr
 License: \tab GNU GPL v2\cr
 LazyLoad: \tab yes\cr
 }
@@ -36,7 +36,7 @@ A workaround is to use R 2.15.1 or to start RNetLogo from JGR (see \url{http://c
 
 If you want to increase the Java Heap Space and set other parameters of the Java Virtual Machine (JVM) see notes at \code{NLStart}.
 
-See the \bold{tutorial} located in folder "tutorial" in the installation path of the package for an introduction. Example codes for all functions can be found in the folder "\bold{examples}" in the installation path of the package. For \bold{performance notes} see the document "performanceNotes.pdf" in folder "performanceNodes" and for an introduction how to \bold{run RNetLogo in parallel} on multicore computers or clusters/grids see the document "parallelProcessing.pdf" in folder "parallelProcessing".
+See the \bold{tutorial} located in folder "tutorial" in the installation path of the package for an introduction. Example codes for all functions can be found in the folder "\bold{examples}" in the installation path of the package. For \bold{performance notes} see the vignette "performanceNotes.pdf" and for an introduction how to \bold{run RNetLogo in parallel} on multicore computers or clusters/grids see the vignette "parallelProcessing.pdf".
 }
 \author{
   Jan C. Thiele <jthiele@gwdg.de>

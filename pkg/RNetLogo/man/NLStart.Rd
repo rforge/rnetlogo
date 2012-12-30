@@ -34,7 +34,7 @@ NLStart(nl.path, gui=TRUE, obj.name=NULL, nl.version=5, is3d=FALSE)
   For NetLogo 4.1.x use \code{nl.version=4}.
   For NetLogo 4.0.x use \code{nl.version=40}.
   Please note, that the data transformation is much faster in NetLogo 5.0 than in NetLogo 4.x. Therefore, using NetLogo 5 is strongly recommended.
-  See the document \code{performanceNotes.pdf} in directory \code{performanceNotes} in the installation directory of the package for performance details.
+  See the vignette \code{performanceNotes.pdf} for performance details.
 }
   \item{is3d}{
   (optional) A boolean value: if \code{TRUE}, NetLogo 3D will be started. \code{FALSE} will start the conventional 2D NetLogo. This functionality is experimental. All RNetLogo functions should work in NetLogo 3D as they do in conventional 2D NetLogo except NLSetPatches, which is currently not implemented to work in NetLogo 3D properly.
@@ -69,9 +69,9 @@ automatically when loading NetLogo and changes back to the former working direct
 
   See the document \code{tutorial.pdf} in directory \code{tutorial} in the installation directory of the package for a step-by-step usage tutorial.
 
-  See the document \code{performanceNotes.pdf} in directory \code{performanceNotes} in the installation directory of the package for performance notes.
+  See the vignette \code{performanceNotes.pdf} for performance notes.
   
-  See the document \code{parallelProcessing.pdf} in directory \code{parallelProcessing} in the installation directory of the package for notes on how to run RNetLogo on multiple processors/clusters in parallel.
+  See the vignette \code{parallelProcessing.pdf} on how to run RNetLogo on multiple processors/clusters in parallel.
 }
 \value{
   The function implicitly returns a Java Object containing the reference to the Java controlling interface, stored in a variable with the name given in the third argument. 

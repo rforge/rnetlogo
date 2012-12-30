@@ -1,6 +1,8 @@
 \documentclass[article,nojss]{jss}
 \graphicspath{{images/}}
 
+%\VignetteIndexEntry{Parallel Processing with RNetLogo}
+
 %% almost as usual
 \author{
   Jan C. Thiele\\
@@ -64,7 +66,7 @@ individual based modelling, ibm, modelling} %% without formatting
 \begin{document}
 \SweaveOpts{engine = R, eps = FALSE}
 \SweaveOpts{keep.source = TRUE}
-%\SweaveOpts{prefix.string=C:/Programme/R/R-2.14.1/own_packages/rnetlogo/pkg/RNetLogo/inst/parallelProcessing/images/}
+%\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
 
 <<preliminaries, echo=FALSE, results=hide>>=
 options(prompt = "R> ", continue = "+  ", width = 70, useFancyQuotes = FALSE)
@@ -176,6 +178,16 @@ simfun <- function(x) {
 # the quit function
 postpro <- function(x) {
   NLQuit()
+}
+@
+
+
+<<label=defineFunctions1XX, eval=TRUE, echo=FALSE, results=hide>>=
+# the initialization function
+prepro <- function(dummy, gui, nl.path, model.path) {
+  library(RNetLogo)
+  NLStart(nl.path, nl.version=5, gui=FALSE)
+  NLLoadModel(model.path)
 }
 @
 

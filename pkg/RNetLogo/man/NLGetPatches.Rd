@@ -48,7 +48,7 @@ NLGetPatches(patch.var, patchset="patches", as.matrix=FALSE,
 }
 \details{
   It's possible to use all the variables of a patch, which can be found in NetLogo's Agent Monitors.
-  See the document \code{performanceNotes.pdf} in directory \code{performanceNotes} in the installation directory of the package for performance details and notes on changes since version 0.9.3.
+  See the vignette \code{performanceNotes.pdf} for performance details and notes on changes since version 0.9.3.
 
 }
 \value{
