@@ -1,16 +1,14 @@
 Package: RNetLogo
-Title: Provides an interface to the agent-based modelling plattform NetLogo
-Version: 0.9.3
-Date: 2012-05-25
+Version: 0.9.4
+Date: 2012-12-30
+Title: Provides an interface to the agent-based modelling platform NetLogo
 Author: Jan C. Thiele
 Maintainer: Jan C. Thiele <jthiele@gwdg.de>
-Description: Interface to embed NetLogo into the R environment with headless (no GUI) and interactive GUI mode. 
-        Provides functions to load models, execute commands and to get values from reporters. 
-        Equivalent to the NetLogo Mathematica Link http://ccl.northwestern.edu/netlogo/docs/mathematica.html
+Description: Interface to use and access NetLogo from R using either headless (no GUI) or interactive GUI mode. Provides functions to load models, execute commands, and get values from reporters. Mostly analogous to the NetLogo Mathematica Link http://ccl.northwestern.edu/netlogo/docs/mathematica.html
 Depends: R (>= 2.12.1), rJava
 Suggests: igraph
 Imports: rJava (>= 0.6-3)
 SystemRequirements: Java (>= 5.0), NetLogo (>= 4.0)
 License: GPL-2
 LazyLoad: yes
-Packaged: 2011-08-21 11:07:39 UTC; Administrator
+URL: http://rnetlogo.r-forge.r-project.org/

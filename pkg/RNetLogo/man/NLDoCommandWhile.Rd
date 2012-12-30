@@ -1,12 +1,12 @@
 \name{NLDoCommandWhile}
 \alias{NLDoCommandWhile}
 \title{
-  Repeated execution of a command in the referenced NetLogo instance while a reporter returns \code{TRUE}.
+  Repeats a command in the referenced NetLogo instance while a reporter returns \code{TRUE}.
 }
 \description{
-  \code{NLDoCommandWhile} function is used to execute a NetLogo command (submitted as a string)
+  \code{NLDoCommandWhile} function executes a NetLogo command (submitted as a string)
   in the submitted NetLogo instance more than one time. It works like \code{\link{NLCommand}} but will
-  be repeated while the reporter returns \code{TRUE}.
+  be repeated as long as the reporter returns \code{TRUE}.
 }
 \usage{
 NLDoCommandWhile(condition, ..., nl.obj=NULL)
@@ -19,12 +19,15 @@ NLDoCommandWhile(condition, ..., nl.obj=NULL)
   An undefined number of string(s) with the NetLogo command(s) to be executed. See \link{NLCommand} for details.
 }
   \item{nl.obj}{
-  (optional) A variable holding a reference to a NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{
-  This function is used to execute a command for more than one time. It could be used
-  to run a simulation (e.g. calling "go") while a variable is lower a boundary value. 
+  This function is used to execute a command for more than one time. It could be used, for example,
+  to run a simulation (by calling "go") while a variable is below some limit. 
+  
+  The condition is evaluted before the submitted commands are executed. If the condition is \code{FALSE} at the   first evalutation, the commands will never be executed.
+  
   Attention: Make sure that the condition switches from \code{TRUE} to \code{FALSE} sometime, 
   otherwise you will run an endless loop.
 }
@@ -41,7 +44,7 @@ NLDoCommandWhile(condition, ..., nl.obj=NULL)
 }
 \examples{
 \dontrun{
-nl.path <- "C:/Program Files/NetLogo 5.0"
+nl.path <- "C:/Program Files/NetLogo 5.0.3"
 NLStart(nl.path)
 model.path <- "/models/Sample Models/Earth Science/Fire.nlogo"
 NLLoadModel(paste(nl.path,model.path,sep=""))
@@ -49,5 +52,6 @@ NLCommand("setup")
 NLDoCommandWhile("burned-trees < 2200", "go")
 }
 }
-\keyword{ ~NLDoCommandWhile }
-\keyword{ ~RNetLogo }
+\keyword{interface}
+\keyword{NLDoCommandWhile}
+\keyword{RNetLogo}

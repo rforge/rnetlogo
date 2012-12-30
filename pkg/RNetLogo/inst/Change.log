@@ -1,3 +1,12 @@
+v0.9.4
+
+- new function NLSetPatchSet added, 
+  especially usefull for NetLogo 3D as an equivalent to NLSetPatches, which works only with NetLogo 2D
+- Update of manual pages
+- Spelling corrections in parallelProcessing guide
+- Small corrections due to package building warnings
+
+
 v0.9.3
 
 - NetLogo 5.0 is default in NLStart (nl.version=5) --> NetLogo 5.0 is much more faster than NetLogo 4.1.x in sending values to R!
