@@ -64,6 +64,7 @@ individual based modelling, ibm, modelling} %% without formatting
 %% end of declarations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\SweaveOpts{concordance=FALSE}
 \SweaveOpts{engine = R, eps = FALSE}
 \SweaveOpts{keep.source = TRUE}
 %\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
@@ -198,7 +199,7 @@ Now, we have to start the cluster, run the initialization function in each proce
 
 Note, that this is also a nice way to run multiple NetLogo GUI instances in parallel, which is not possible within one R session without this parallelization.
 
-<<label=initNetLogo1, eval=TRUE, echo=TRUE>>=
+<<label=initNetLogo1, eval=FALSE, echo=TRUE>>=
 # load the parallel package, if not already done
 require(parallel)
 
@@ -218,6 +219,28 @@ model.path <- "models/Sample Models/Earth Science/Fire.nlogo"
 invisible(parLapply(cl, 1:processors, prepro, gui=gui, 
                     nl.path=nl.path, model.path=model.path))
 @
+
+<<label=initNetLogo1, eval=TRUE, echo=FALSE>>=
+# load the parallel package, if not already done
+require(parallel)
+
+# detect the number of cores available
+processors <- detectCores()
+
+# create cluster
+cl <- makeCluster(processors)
+
+# set variables for the start up process
+# adapt path appropriate
+gui <- TRUE
+nl.path <- Sys.getenv("NETLOGO_PATH", "C:/Program Files/NetLogo 5.0.3")
+model.path <- "models/Sample Models/Earth Science/Fire.nlogo"
+
+# load NetLogo in each processor/core
+invisible(parLapply(cl, 1:processors, prepro, gui=gui, 
+                    nl.path=nl.path, model.path=model.path))
+@
+
 
 After the initialization is done in all processors, we can run the simulation. Here, we will use the Fire model from NetLogo's Model Library. We will vary the density value from 1 to 20, i.e. we will run 20 independent simulations each with a different density value. 
 
