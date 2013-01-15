@@ -9,7 +9,7 @@
   be repeated as long as the reporter returns \code{TRUE}.
 }
 \usage{
-NLDoCommandWhile(condition, ..., maxMinutes=10, nl.obj=NULL)
+NLDoCommandWhile(condition, ..., max.minutes=10, nl.obj=NULL)
 }
 \arguments{
   \item{condition}{
