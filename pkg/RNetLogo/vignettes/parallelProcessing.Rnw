@@ -67,7 +67,7 @@ individual based modelling, ibm, modelling} %% without formatting
 \SweaveOpts{concordance=FALSE}
 \SweaveOpts{engine = R, eps = FALSE}
 \SweaveOpts{keep.source = TRUE}
-%\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
+%\SweaveOpts{prefix.string=images/}
 
 <<preliminaries, echo=FALSE, results=hide>>=
 options(prompt = "R> ", continue = "+  ", width = 70, useFancyQuotes = FALSE)
@@ -210,28 +210,7 @@ processors <- detectCores()
 cl <- makeCluster(processors)
 
 # set variables for the start up process
-# adapt path appropriate
-gui <- TRUE
-nl.path <- "C:/Program Files/NetLogo 5.0.3"
-model.path <- "models/Sample Models/Earth Science/Fire.nlogo"
-
-# load NetLogo in each processor/core
-invisible(parLapply(cl, 1:processors, prepro, gui=gui, 
-                    nl.path=nl.path, model.path=model.path))
-@
-
-<<label=initNetLogo1, eval=TRUE, echo=FALSE>>=
-# load the parallel package, if not already done
-require(parallel)
-
-# detect the number of cores available
-processors <- detectCores()
-
-# create cluster
-cl <- makeCluster(processors)
-
-# set variables for the start up process
-# adapt path appropriate
+# adapt path appropriate (or set an environment variable NETLOGO_PATH)
 gui <- TRUE
 nl.path <- Sys.getenv("NETLOGO_PATH", "C:/Program Files/NetLogo 5.0.3")
 model.path <- "models/Sample Models/Earth Science/Fire.nlogo"
@@ -241,23 +220,31 @@ invisible(parLapply(cl, 1:processors, prepro, gui=gui,
                     nl.path=nl.path, model.path=model.path))
 @
 
-
 After the initialization is done in all processors, we can run the simulation. Here, we will use the Fire model from NetLogo's Model Library. We will vary the density value from 1 to 20, i.e. we will run 20 independent simulations each with a different density value. 
 
 <<label=simNetLogo1, eval=TRUE, echo=TRUE>>=
 # create a vector with 20 density values
 density <- 1:20
 print(density)
-
+@
+<<label=simNetLogo1b, eval=FALSE, echo=TRUE>>=
 # run a simulation for each density value
 # by calling parallel sapply
 result.par <- parSapply(cl, density, simfun)
+@
+<<eval=FALSE, results=hide, echo=FALSE>>=
+save.image(file="parallelprocessData1.RData")
+@
+<<results=hide, echo=FALSE>>=
+load("parallelprocessData1.RData")
+@
+<<eval=TRUE, echo=TRUE>>=
 print(data.frame(t(result.par)))
 @
 
 At the end, we should stop all NetLogo instances and the cluster.
 
-<<label=quitNetLogo1, eval=TRUE, echo=TRUE>>=
+<<label=quitNetLogo1, eval=FALSE, echo=TRUE>>=
 # Quit NetLogo in each processor/core
 invisible(parLapply(cl, 1:processors, postpro))
 
@@ -272,7 +259,7 @@ The same is possible with the headless mode, i.e. without the GUI. We just have 
 
 It can look like this:
 
-<<label=simNetLogo1, eval=TRUE, echo=TRUE>>=
+<<label=simNetLogo1, eval=FALSE, echo=TRUE>>=
 # run in headless mode
 gui <- FALSE
 
@@ -282,16 +269,28 @@ cl <- makeCluster(processors)
 # load NetLogo in each processor/core
 invisible(parLapply(cl, 1:processors, prepro, gui=gui, 
                     nl.path=nl.path, model.path=model.path))
+@
 
+<<eval=TRUE, echo=TRUE>>=
 # create a vector with 20 density values
 density <- 1:20
 print(density)
-
+@
+<<eval=FALSE, echo=TRUE>>=
 # run a simulation for each density value
 # by calling parallel sapply
 result.par <- parSapply(cl, density, simfun)
+@
+<<eval=FALSE, results=hide, echo=FALSE>>=
+save.image(file="parallelprocessData2.RData")
+@
+<<results=hide, echo=FALSE>>=
+load("parallelprocessData2.RData")
+@
+<<eval=TRUE, echo=TRUE>>=
 print(data.frame(t(result.par)))
-
+@
+<<eval=FALSE, echo=TRUE>>=
 # Quit NetLogo in each processor/core
 invisible(parLapply(cl, 1:processors, postpro))
 

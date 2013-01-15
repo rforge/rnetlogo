@@ -46,12 +46,12 @@ two worlds are yours</small></h1>
 
 <div class="clr"></div>
 
-<p>The RNetLogo package delivers an interface to embed <a href="http://ccl.northwestern.edu/netlogo/" target="_blank">NetLogo</a>
-into the <a href="http://www.r-project.org/" target="_blank">GNU
-R</a> environment with headless (no Graphical User Interface) and
+<p>The RNetLogo package delivers an interface to use and access <a href="http://ccl.northwestern.edu/netlogo/" target="_blank">NetLogo</a>
+from <a href="http://www.r-project.org/" target="_blank">GNU
+R</a> using either headless (no Graphical User Interface) or
 interactive GUI mode. It provides functions to load models, execute
 commands, push values and to get values from
-NetLogo reporters. The interface is mostly equivalent to NetLogos'
+NetLogo reporters. The interface is mostly equivalent to NetLogo's
 <a href="http://ccl.northwestern.edu/netlogo/docs/mathematica.html" target="_blank">Mathematica Link</a>.
 </p>
 
@@ -68,7 +68,7 @@ your R shell - or for Windows users with the RGui to click on <i>Packages
 -&gt; Install
 package(s)...</i> and select RNetLogo. This will install the
 version hosted on <a href="http://cran.r-project.org/web/packages/RNetLogo/index.html" target="_bank">CRAN</a>. The latest package version
-will be available here on <a href="https://r-forge.r-project.org/R/?group_id=1202">R-Forge</a>. If you don't want to download it manually you can type <i>install.packages("RNetLogo", repos="http://R-Forge.R-project.org")</i> in your R shell.
+will be available here on <a href="https://r-forge.r-project.org/R/?group_id=1202">R-Forge</a> (can be broken during development of new releases). If you don't want to download it manually you can type <i>install.packages("RNetLogo", repos="http://R-Forge.R-project.org")</i> in your R shell.
 </p>
 
 </div>

@@ -2,6 +2,8 @@ v0.9.4
 
 - new function NLSetPatchSet added, 
   especially usefull for NetLogo 3D as an equivalent to NLSetPatches, which works only with NetLogo 2D
+- new argument max.minutes added to NLDoCommandWhile and NLDoReportWhile. It stops the execution after 
+  a defined number of minutes (default: 10), if it is > 0.
 - Update of manual pages
 - Spelling corrections in parallelProcessing guide
 - Small corrections due to package building warnings

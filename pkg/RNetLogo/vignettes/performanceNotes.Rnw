@@ -67,7 +67,8 @@ individual based modelling, ibm, performance, execution time} %% without formatt
 \begin{document}
 \SweaveOpts{engine = R, eps = FALSE}
 \SweaveOpts{keep.source = TRUE}
-\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
+%\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
+\SweaveOpts{prefix.string=images/}
 
 <<preliminaries, echo=FALSE, results=hide>>=
 options(prompt = "R> ", continue = "+  ", width = 70, useFancyQuotes = FALSE)
@@ -126,7 +127,7 @@ test_t6 <- NLGetAgentSet(c("who", "xcor", "ycor"), "turtles", as.data.frame=F)
 @
 
 <<test_data_092_B, eval=FALSE, results=hide, echo=FALSE>>=
-save.image(file="C:/Programme/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/testdata_RNetLogo092.RData")
+save.image(file="testdata_RNetLogo092.RData")
 @
 
 <<list_example_RN092_A, results=hide, echo=FALSE>>=

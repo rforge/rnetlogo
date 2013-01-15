@@ -51,7 +51,7 @@ NLStart(nl.path, gui=TRUE, obj.name=NULL, nl.version=5, is3d=FALSE)
 
   \bold{Note for Linux users}: If you want to run RNetLogo in GUI mode you should start RNetLogo in the JGR application (see \url{http://cran.r-project.org/web/packages/JGR/index.html}).
 
-\bold{Note for Windows 32-bit users}: Starting RNetLogo (in GUI mode) on 32-bit Windows (not 64-bit Windows running in 32-bit mode) may fail in R version 2.15.2 (similar problem was reported here: \url{http://r.789695.n4.nabble.com/rJava-td4652659.html} and here \url{http://support.rstudio.org/help/discussions/problems/4126-rstudio-v-and-v096331-running-with-rbbg}). The reason could be the increased C stack size since 2.15.2. If you execute \code{Cstack_info()} you can see how large the C stack size is. 
+\bold{Note for Windows 32-bit users}: Starting RNetLogo (in GUI mode) on 32-bit Windows (not 64-bit Windows running in 32-bit mode) may fail in R version 2.15.2 (see description here: \url{https://stat.ethz.ch/pipermail/r-devel/2013-January/065576.html}). The reason could be the increased C stack size since 2.15.2. If you execute \code{Cstack_info()} you can see how large the C stack size is. 
 A workaround is to use R 2.15.1 or to start RNetLogo from JGR (see \url{http://cran.r-project.org/web/packages/JGR/index.html}) or RStudio (see \url{http://www.rstudio.com/}).
 
   Avoid manually changing the working directory of R, because NetLogo needs to have the working directory pointed to its installation path. As 

@@ -10,7 +10,7 @@
 }
 \usage{
 NLDoReportWhile(condition, command, reporter, as.data.frame=FALSE, 
-                df.col.names=NULL, nl.obj=NULL)
+                df.col.names=NULL, max.minutes=10, nl.obj=NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -31,6 +31,9 @@ NLDoReportWhile(condition, command, reporter, as.data.frame=FALSE,
   (optional) If \code{as.data.frame=TRUE} defines the names of the columns of the returned data.frame. 
   The argument is a vector containing the names as strings in the same order as the reporters. 
 }
+  \item{max.minutes}{
+  (optional) If \code{max.minutes > 0} the execution stops after the defined number of minutes (with an error and no return value). By default, all executions are stoped after 5 minutes, to prevent the execution of endless loops. If you need more time, increase the value. If you're sure what you do, you can set this value to 0. Then, it will run while the condition is true (i.e. endlessly when the condition is never met. In GUI mode, you can press "Tools --> Halt" in the NetLogo menu to interrupt a running process.). This can speed up the execution, because the time checking is not applied in this case. 
+}
   \item{nl.obj}{
   (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
@@ -39,7 +42,7 @@ NLDoReportWhile(condition, command, reporter, as.data.frame=FALSE,
   This function executes a command more than one time and reports a value or a number of values after
   each iteration. It is usually used to call a procedure (e.g. "go") while a variable is below a boundary value and save the value of a state variable each time. 
   Attention: Make sure that the condition switches from \code{TRUE} to \code{FALSE} sometime, 
-  otherwise you will run an endless loop.
+  otherwise you will run an endless loop (which is stopped after 10 minutes by default, see argument \code{max.minutes}).
 }
 \value{
   A list/nested list with the value(s) of the reporter after each execution of the command.
