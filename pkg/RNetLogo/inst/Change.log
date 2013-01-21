@@ -1,3 +1,7 @@
+v0.9.5
+
+- just a fix to fulfill CRAN policy: limit max. parallel processes in vignette parallelProcessing.Rnw to 2 core. 
+
 v0.9.4
 
 - new function NLSetPatchSet added, 
