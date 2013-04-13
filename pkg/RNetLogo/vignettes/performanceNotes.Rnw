@@ -67,7 +67,7 @@ individual based modelling, ibm, performance, execution time} %% without formatt
 \begin{document}
 \SweaveOpts{engine = R, eps = FALSE}
 \SweaveOpts{keep.source = TRUE}
-%\SweaveOpts{prefix.string=C:/Program Files/R/R-2.15.2/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
+%\SweaveOpts{prefix.string=C:/Users/jthiele/own_packages/rnetlogo/pkg/RNetLogo/vignettes/images/}
 \SweaveOpts{prefix.string=images/}
 
 <<preliminaries, echo=FALSE, results=hide>>=
