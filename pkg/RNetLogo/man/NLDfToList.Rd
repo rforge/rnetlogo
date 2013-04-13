@@ -35,7 +35,7 @@ NLDfToList(in.data.frame, nl.obj=NULL)
 }
 \examples{
 \dontrun{
-NLStart("C:/Program Files/NetLogo 5.0.3")
+NLStart("C:/Program Files/NetLogo 5.0.4")
 df1 <- data.frame(x=c(1,2,3,4),y=c(1,2,3,4))
 # the current NetLogo model must have lists with the names 'x' and 'y'
 NLDfToList(df1)
