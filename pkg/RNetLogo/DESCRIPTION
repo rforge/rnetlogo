@@ -1,6 +1,6 @@
 Package: RNetLogo
 Version: 0.9.6
-Date: 2013-01-29
+Date: 2013-04-13
 Title: Provides an interface to the agent-based modelling platform NetLogo
 Author: Jan C. Thiele
 Maintainer: Jan C. Thiele <jthiele@gwdg.de>
