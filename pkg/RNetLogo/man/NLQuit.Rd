@@ -7,11 +7,14 @@
   Quits the NetLogo workspace and closes the GUI window (if started with GUI).
 }
 \usage{
-NLQuit(nl.obj=NULL)
+NLQuit(nl.obj=NULL, all=FALSE)
 }
 \arguments{
   \item{nl.obj}{
-  (optional) The reference to a NetLogo instance, if several have been started.
+  (optional) A string identifying a reference to the NetLogo instance defined in \code{nl.obj} of \code{NLStart}.
+}
+  \item{all}{
+  (optional) A boolean variable: If \code{TRUE} all active instances of NetLogo created with \code{NLStart} are closed. Then, \code{nl.obj} argument is not used.
 }
 }
 \value{

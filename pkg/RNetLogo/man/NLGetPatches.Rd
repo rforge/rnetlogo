@@ -43,7 +43,7 @@ NLGetPatches(patch.var, patchset="patches", as.matrix=FALSE,
   By default \code{as.vector} is \code{FALSE}.
 } 
   \item{nl.obj}{
-  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{

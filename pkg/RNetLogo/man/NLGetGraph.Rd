@@ -14,7 +14,7 @@ NLGetGraph(link.agentset="links", nl.obj=NULL)
   (optional) A string defining an agentset of NetLogo Links. Default is \code{"links"}, which are all links.
 }
   \item{nl.obj}{
-  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{

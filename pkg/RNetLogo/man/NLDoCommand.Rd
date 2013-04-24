@@ -18,7 +18,7 @@ NLDoCommand(iterations, ..., nl.obj=NULL)
   An undefined number of string(s) with the NetLogo command(s) to be executed. See \link{NLCommand} for details.
 }
   \item{nl.obj}{
-  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{

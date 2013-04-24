@@ -18,7 +18,7 @@ NLCommand(..., nl.obj=NULL)
   Furthermore, you can execute multiple commands in series, e.g. \code{'setup','go'} 
 }
   \item{nl.obj}{
-  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}. 
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}. 
 }
 }
 \details{

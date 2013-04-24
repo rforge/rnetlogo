@@ -37,7 +37,6 @@
 %------------------------------------------------------------------------------------------------------
 %------------------------------------------------------------------------------------------------------
 
-
 \section{Changes in version 0.9-6}{
 
   \subsection{BUG FIXES}{
@@ -45,7 +44,7 @@
     \itemize{
 
       \item \code{NLStart(<nl.path>, ...)} failed with: \code{Error in .jnew("nlcon/Preprocess") : java.lang.UnsupportedClassVersionError: nlcon/Preprocess : Unsupported major.minor version 51.0}. This happend when using Java versions before 7. The .jar files are now compiled with support up to Java 5. 
-
+      \item several bug fixes and changes in manual pages, code examples and tutorial
     }
 
   } % bug fixes
@@ -54,7 +53,9 @@
     \itemize{
 
       \item Change.log moved to NEWS.Rd. Therefore, \code{news()} function is supported now.
-
+      \item Argument \code{obj.name} in \code{NLStart} is replaced by \code{nl.obj}. In all other	functions \code{nl.obj} is now also a string instead of an reference to NetLogo. References are handled internally, now, 	and no global variables are created anymore. 
+      \item More clear working directory handling strategy: stores the working directory active before creating the first NetLogo	instance. Reset to this wd after closing the last active NetLogo instance.
+	    \item New \code{all} argument in \code{NLQuit} to close/quit all open NetLogo instances.
     }
 
   } % new features

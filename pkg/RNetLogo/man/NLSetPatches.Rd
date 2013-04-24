@@ -17,7 +17,7 @@ NLSetPatches(patch.var, in.matrix, nl.obj=NULL)
   A matrix that represents the NetLogo world (has the same dimensions).
 }
   \item{nl.obj}{
-  (optional) A reference to a NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{
@@ -42,7 +42,7 @@ NLSetPatches(patch.var, in.matrix, nl.obj=NULL)
 nl.path <- "C:/Program Files/NetLogo 5.0.4"
 NLStart(nl.path)
 m1 <- matrix(1:1089 , 33)
-NLSetPatches(m1, "pcolor")
+NLSetPatches("pcolor", m1)
 }
 }
 \keyword{interface}

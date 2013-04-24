@@ -16,8 +16,8 @@ Mostly analogous to the NetLogo Mathematica Link
 \tabular{ll}{
 Package: \tab RNetLogo\cr
 Type: \tab Package\cr
-Version: \tab 0.9.6\cr
-Date: \tab 2013-04-21\cr
+Version: \tab 0.9-6\cr
+Date: \tab 2013-04-24\cr
 License: \tab GNU GPL v2\cr
 LazyLoad: \tab yes\cr
 }
@@ -68,5 +68,6 @@ NLCommand("setup")
 NLDoCommand(10, "go")
 burned <- NLReport("burned-trees")
 print(burned)
+NLQuit()
 }
 }

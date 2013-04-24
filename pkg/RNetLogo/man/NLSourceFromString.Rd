@@ -19,7 +19,7 @@ NLSourceFromString(..., append.model=TRUE, nl.obj=NULL)
   By default, all existing code will be appended.
 }
   \item{nl.obj}{
-  (optional) A variable holding a reference to an NetLogo instance created with \code{\link{NLStart}}.
+  (optional) A string identifying a reference to a NetLogo instance created with \code{\link{NLStart}}.
 }
 }
 \details{
