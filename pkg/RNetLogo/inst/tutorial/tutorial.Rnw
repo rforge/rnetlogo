@@ -605,7 +605,7 @@ NLStart(nl.path,
         nl.obj=my.netlogo3)
 @
 
-All functions, presented above, take as last (optional) argument the referece name of 
+All functions, presented above, take as last (optional) argument the reference name of 
 the NetLogo instance (nl.obj). Therefore, we can specify which instance we want 
 to use. When working in headless mode, the first thing to do is always to load a 
 model. Executing a command or reporter without loading a model in headless 
