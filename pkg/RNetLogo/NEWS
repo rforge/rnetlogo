@@ -1,7 +1,7 @@
 Changes in version 0.9-7:
-  NEW FEATURES
-  *Massive performance improvements in NLSetAgentSet, NLSetPatches, NLSetPatchSet
-  *Change in NLSetPatchSet: identifies columns in the input data.frame by name. Expects pxcor, pycor (and, in case of 3D, pzcor) columns.
+	NEW FEATURES
+	*Massive performance improvements in NLSetAgentSet, NLSetPatches, NLSetPatchSet
+	*Change in NLSetPatchSet: identifies columns in the input data.frame by name. Expects pxcor, pycor (and, in case of 3D, pzcor) columns.
 
 
 Changes in version 0.9-6:

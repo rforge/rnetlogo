@@ -25,9 +25,9 @@ function(agentset, input, var.name=NULL, nl.obj=NULL)
                          function(x) 
                            paste("[",paste(x, collapse=" "), "]", collapse=" ")
                   ), " ", collapse=" ")                                                  
-    sets_ <- paste(lapply(1:length(vars),
+    sets_ <- paste(lapply(1:length(vars_),
                         function(x) 
-                          paste("set ", vars[x], " ?",cnt+x," ", sep="")
+                          paste("set ", vars_[x], " ?",cnt+x," ", sep="")
                   ), collapse="")    
     end_ <- "] ])"
     merged_ = paste(prev_, inp_, ask_, sets_, end_, sep="", collapse="")
