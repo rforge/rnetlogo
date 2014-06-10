@@ -43,12 +43,19 @@ See the paper located in folder "tutorial" in the installation path of the packa
 }
 \references{
   For NetLogo see \url{http://ccl.northwestern.edu/netlogo}.
+  
   For R Extension for NetLogo see \url{http://r-ext.sourceforge.net/}.
+  
   For Rserve Extension for NetLogo see \url{http://rserve-ext.sourceforge.net/}.
+  
   The RNetLogo package is analogous to (and inspired by) the NetLogo Mathematica Link \url{http://ccl.northwestern.edu/netlogo/docs/mathematica.html}.  
+  
   Thiele, J. (2014) R Marries NetLogo: Introduction to the RNetLogo Package. Journal of Statistical Software 58(2) 1-41. \url{http://www.jstatsoft.org/v58/i02/}  
+  
   Thiele, J., Kurth, W., Grimm, V. (2012) RNetLogo: An R Package for Running and Exploring Individual-Based Models Implemented in NetLogo. Methods in Ecology and Evolution 3(3) 480-483.
+  
   R Core Team (2014) R: A Language and Environment for Statistical. R Foundation for Statistical Computing.Vienna, Austria. \url{http://www.R-project.org}.    
+  
   Wilensky, U. (1999) NetLogo. \url{http://ccl.northwestern.edu/netlogo/}. Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL.  
 }
 \keyword{NetLogo}
