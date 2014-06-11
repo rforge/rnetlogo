@@ -36,7 +36,7 @@ A workaround is to use R 2.15.1 or 3.x or to start RNetLogo from JGR (see \url{h
 
 If you want to increase the Java Heap Space and set other parameters of the Java Virtual Machine (JVM) see notes at \code{NLStart}.
 
-See the paper located in folder "tutorial" in the installation path of the package for an introduction. Example codes for all functions can be found in the folder "\bold{examples}" in the installation path of the package. For \bold{performance notes} see the vignette "performanceNotes.pdf" and for an introduction how to \bold{run RNetLogo in parallel} on multicore computers or clusters/grids see the vignette "parallelProcessing.pdf".
+See the tutorial published as Thiele (2014) for an introduction. Example codes for all functions can be found in the folder "\bold{examples}" in the installation path of the package. For \bold{performance notes} see the vignette "performanceNotes.pdf" and for an introduction how to \bold{run RNetLogo in parallel} on multicore computers or clusters/grids see the vignette "parallelProcessing.pdf".
 }
 \author{
   Jan C. Thiele <jthiele@gwdg.de>
