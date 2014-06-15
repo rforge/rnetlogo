@@ -22,9 +22,9 @@ citEntry(entry = "Article",
 citEntry(entry ="Article",
   title        = "{RNetLogo}: An {R} Package for Running and Exploring Individual-Based Models Implemented in {NetLogo}",
   author       = personList(
-      			as.person(given="Jan C.",   family="Thiele",  email="jthiele@gwdg.de"),
-      			as.person(given="Winfried",family="Kurth",  email="wk@informatik.uni-goettingen.de"),
-      			as.person(given="Volker",   family="Grimm",  email="volker.grimm@ufz.de")
+      			as.person("Jan C. Thiele"),
+      			as.person(given="Winfried Kurth"),
+      			as.person(given="Volker Grimm")
     		 ),
   journal      = "Methods in Ecology and Evolution",
   year         = "2012",
