@@ -55,7 +55,7 @@ NLGetAgentSet(agent.var, agentset, as.data.frame=TRUE,
   \code{as.data.frame=FALSE} and \code{agents.by.row=TRUE}.
 }
 \author{
-  Jan C. Thiele <jthiele@gwdg.de>
+  Jan C. Thiele <rnetlogo@gmx.de>
 }
 \seealso{
   \code{\link{NLReport}},
@@ -64,7 +64,7 @@ NLGetAgentSet(agent.var, agentset, as.data.frame=TRUE,
 }
 \examples{
 \dontrun{
-nl.path <- "C:/Program Files/NetLogo 5.0.5"
+nl.path <- "C:/Program Files/NetLogo 5.1.0"
 NLStart(nl.path)
 # NLLoadModel(...)
 NLCommand("create-turtles 10")

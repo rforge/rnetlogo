@@ -61,7 +61,7 @@ NLGetPatches(patch.var, patchset="patches", as.matrix=FALSE,
   \code{as.data.frame=FALSE} and \code{patches.by.row=TRUE}.
 }
 \author{
-  Jan C. Thiele <jthiele@gwdg.de>
+  Jan C. Thiele <rnetlogo@gmx.de>
 }
 \seealso{
   \code{\link{NLReport}},
@@ -70,7 +70,7 @@ NLGetPatches(patch.var, patchset="patches", as.matrix=FALSE,
 }
 \examples{
 \dontrun{
-nl.path <- "C:/Program Files/NetLogo 5.0.5"
+nl.path <- "C:/Program Files/NetLogo 5.1.0"
 NLStart(nl.path)
 # NLLoadModel(...)
 

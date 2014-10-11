@@ -13,7 +13,7 @@ NLStart(nl.path, gui=TRUE, nl.obj=NULL, nl.version=5, is3d=FALSE)
 }
 \arguments{
   \item{nl.path}{
-  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 5.0.4".
+  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 5.1.0".
 }
   \item{gui}{
   (optional) A boolean value: if \code{TRUE}, NetLogo will be started with GUI (only one instance with GUI can be created currently!). 
@@ -27,10 +27,10 @@ NLStart(nl.path, gui=TRUE, nl.obj=NULL, nl.version=5, is3d=FALSE)
   Don't try to start a NetLogo version 4.x with nl.version=5 and vice versa.
   It is not possible to mix NetLogo versions in one R session. Please use different R sessions if you want to start RNetLogo
   with version 4 and version 5.
-  The default is \code{nl.version=5} for NetLogo 5.0.
+  The default is \code{nl.version=5} for NetLogo 5.x.
   For NetLogo 4.1.x use \code{nl.version=4}.
   For NetLogo 4.0.x use \code{nl.version=40}.
-  Please note, that the data transformation is much faster in NetLogo 5.0 than in NetLogo 4.x. Therefore, using NetLogo 5 is strongly recommended.
+  Please note, that the data transformation is much faster in NetLogo 5.x than in NetLogo 4.x. Therefore, using NetLogo 5 is strongly recommended.
   See the vignette \cr
   \code{performanceNotes.pdf} for performance details.
 }
@@ -78,7 +78,7 @@ automatically when loading NetLogo and changes back to the former working direct
   No return value. 
 }
 \author{
-  Jan C. Thiele <jthiele@gwdg.de>
+  Jan C. Thiele <rnetlogo@gmx.de>
 }
 
 \references{
@@ -99,7 +99,7 @@ automatically when loading NetLogo and changes back to the former working direct
 \examples{
 \dontrun{
 library(RNetLogo)
-nl.path <- "C:/Program Files/NetLogo 5.0.5"
+nl.path <- "C:/Program Files/NetLogo 5.1.0"
 NLStart(nl.path)
 NLCommand("create-turtles 10")
 noturtles <- NLReport("count turtles")

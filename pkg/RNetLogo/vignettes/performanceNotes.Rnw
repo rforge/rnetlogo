@@ -50,7 +50,7 @@ individual based modelling, ibm, performance, execution time} %% without formatt
   University of G\"ottingen\\
   B\"usgenweg 4\\
   37077 G\"ottingen, Germany\\
-  E-mail: \email{jthiele@gwdg.de}\\
+  E-mail: \email{rnetlogo@gmx.de}\\
   URL: \url{http://www.uni-goettingen.de/en/72779.html}\\
 }
 
