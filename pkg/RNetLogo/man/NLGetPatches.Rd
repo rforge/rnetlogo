@@ -49,16 +49,11 @@ NLGetPatches(patch.var, patchset="patches", as.matrix=FALSE,
 }
 \details{
   It's possible to use all the variables of a patch, which can be found in NetLogo's Agent Monitors.
-  See the vignette \code{performanceNotes.pdf} for performance details and notes on changes since version 0.9.3.
-
 }
 \value{
   Returns a data.frame (optional a list) with the variable value(s) of a patch/patches of a patchset. 
   One row for each patch and one column for each patch variable.
   The result is sorted (like using \code{sort patchset} in NetLogo), e.g. patches are sorted from upper left to lower right.
-  
-  To get the same result as with default settings until RNetLogo version 0.9.2 use: \cr
-  \code{as.data.frame=FALSE} and \code{patches.by.row=TRUE}.
 }
 \author{
   Jan C. Thiele <rnetlogo@gmx.de>

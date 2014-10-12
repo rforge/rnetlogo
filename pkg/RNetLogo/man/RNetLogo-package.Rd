@@ -72,7 +72,7 @@ See the tutorial published as Thiele (2014) for an introduction. Example codes f
 \dontrun{
 library(RNetLogo)
 nl.path <- "C:/Program Files/NetLogo 5.1.0"
-NLStart(nl.path, nl.version=5)
+NLStart(nl.path)
 model.path <- "/models/Sample Models/Earth Science/Fire.nlogo"
 NLLoadModel(paste(nl.path,model.path,sep=""))
 NLCommand("setup")

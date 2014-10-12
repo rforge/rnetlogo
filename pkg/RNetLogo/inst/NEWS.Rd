@@ -37,6 +37,14 @@
 %------------------------------------------------------------------------------------------------------
 
 \section{Changes in version 1.0-1}{
+  \subsection{NEW FEATURES}{
+  
+    \itemize{  
+      \item Removing support for NetLogo 4.x (no nl.version argument in NLStart anymore)
+	  \item Removing performanceNotes vignette
+    }
+ }
+ 
   \subsection{BUG FIXES}{
 
     \itemize{
