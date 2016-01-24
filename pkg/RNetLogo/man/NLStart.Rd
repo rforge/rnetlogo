@@ -13,7 +13,7 @@ NLStart(nl.path, gui=TRUE, nl.obj=NULL, is3d=FALSE)
 }
 \arguments{
   \item{nl.path}{
-  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 5.1.0".
+  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 5.3/app".
 }
   \item{gui}{
   (optional) A boolean value: if \code{TRUE}, NetLogo will be started with GUI (only one instance with GUI can be created currently!). 
@@ -87,7 +87,7 @@ automatically when loading NetLogo and changes back to the former working direct
 \examples{
 \dontrun{
 library(RNetLogo)
-nl.path <- "C:/Program Files/NetLogo 5.1.0"
+nl.path <- "C:/Program Files/NetLogo 5.3/app"
 NLStart(nl.path)
 NLCommand("create-turtles 10")
 noturtles <- NLReport("count turtles")
