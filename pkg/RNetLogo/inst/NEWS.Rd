@@ -41,6 +41,8 @@
   
     \itemize{  
       \item Update to NetLogo 5.3
+	  \item Changes in internal architecture of holding S4 class object for conformity to CRAN policy 
+	  \item Supporting older Java version again (addressing "Unsupported major.minor version" error, however, using Java version before 8.0 is deprecated)
     }
  }
    
