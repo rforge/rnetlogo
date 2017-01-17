@@ -16,8 +16,8 @@ Mostly analogous to the NetLogo Mathematica Link
 \tabular{ll}{
 Package: \tab RNetLogo\cr
 Type: \tab Package\cr
-Version: \tab 1.0-2\cr
-Date: \tab 2016-01-25\cr
+Version: \tab 1.0-3\cr
+Date: \tab 2017-01-17\cr
 License: \tab GNU GPL v2\cr
 LazyLoad: \tab yes\cr
 }
@@ -71,8 +71,9 @@ See the tutorial published as Thiele (2014) for an introduction. Example codes f
 \examples{
 \dontrun{
 library(RNetLogo)
-nl.path <- "C:/Program Files/NetLogo 5.3/app"
-NLStart(nl.path)
+nl.path <- "C:/Program Files/NetLogo 6.0/app"
+nl.jarname <- "netlogo-6.0.0.jar"
+NLStart(nl.path, nl.jarname=nl.jarname)
 model.path <- "/models/Sample Models/Earth Science/Fire.nlogo"
 NLLoadModel(paste(nl.path,model.path,sep=""))
 NLCommand("setup")

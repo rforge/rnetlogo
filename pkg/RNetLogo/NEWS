@@ -1,3 +1,8 @@
+Changes in version 1.0-3:
+	NEW FEATURES
+	  *Update to NetLogo 6.0
+	  *Adding optional parameter in NLStart to specify name of netlogo.jar file as the name contains the version number in the name since NetLogo 6.0.0.
+
 Changes in version 1.0-2:
 	NEW FEATURES
 	  *Update to NetLogo 5.3

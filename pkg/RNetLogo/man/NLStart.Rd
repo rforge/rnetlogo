@@ -13,7 +13,7 @@ NLStart(nl.path, gui=TRUE, nl.obj=NULL, is3d=FALSE)
 }
 \arguments{
   \item{nl.path}{
-  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 5.3/app".
+  An absolute path to your NetLogo installation (the folder where the NetLogo.jar is) starting from the root. On Windows, for example, something like "C:/Program Files/NetLogo 6.0/app".
 }
   \item{gui}{
   (optional) A boolean value: if \code{TRUE}, NetLogo will be started with GUI (only one instance with GUI can be created currently!). 
@@ -24,6 +24,9 @@ NLStart(nl.path, gui=TRUE, nl.obj=NULL, is3d=FALSE)
 }
   \item{is3d}{
   (optional) A boolean value: if \code{TRUE}, NetLogo 3D will be started. \code{FALSE} will start the conventional 2D NetLogo. This functionality is experimental. All RNetLogo functions should work in NetLogo 3D as they do in conventional 2D NetLogo except NLSetPatches, which is currently not implemented to work in NetLogo 3D properly.
+}
+  \item{nl.jarname}{
+  (optional) The name of the NetLogo jar file. Since NetLogo 6.0 the jar file includes the version number. Default value is netlogo-6.0.0.jar. For other version the name has to be set here.
 }
 }
 \details{
@@ -87,7 +90,7 @@ automatically when loading NetLogo and changes back to the former working direct
 \examples{
 \dontrun{
 library(RNetLogo)
-nl.path <- "C:/Program Files/NetLogo 5.3/app"
+nl.path <- "C:/Program Files/NetLogo 6.0/app"
 NLStart(nl.path)
 NLCommand("create-turtles 10")
 noturtles <- NLReport("count turtles")

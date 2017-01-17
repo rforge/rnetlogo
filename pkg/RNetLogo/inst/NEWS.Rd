@@ -36,6 +36,20 @@
 %------------------------------------------------------------------------------------------------------
 %------------------------------------------------------------------------------------------------------
 
+\section{Changes in version 1.0-3}{
+  \subsection{NEW FEATURES}{
+  
+    \itemize{  
+      \item Update to NetLogo 6.0
+	  \item Adding optional parameter in NLStart to specify name of netlogo.jar file as the name contains the version number in the name since NetLogo 6.0.0.
+    }
+ }
+   
+} % version 1.0-3
+
+%------------------------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------------------------
+
 \section{Changes in version 1.0-2}{
   \subsection{NEW FEATURES}{
   
