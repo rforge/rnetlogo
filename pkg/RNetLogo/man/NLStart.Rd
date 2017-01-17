@@ -54,8 +54,7 @@ automatically when loading NetLogo and changes back to the former working direct
   If you want to specify options for the underlying Java Virtual Machine (JVM), like increasing the Java Heap Space for large models, execute \code{options(java.parameters="...")} before loading the RNetLogo package with \code{library(RNetLogo)} or \code{require(RNetLogo)}. For increasing the Java Heap Space it can be \code{options(java.parameters="-Xmx1024m")}, for example. Use a vector of strings for setting multiple options, for example \cr
   \code{options(java.parameters=c("-server","-Xmx1300m"))}.
   See also \cr
-  \url{http://ccl.northwestern.edu/netlogo/docs/faq.html#howbig} and \cr
-  \url{http://permalink.gmane.org/gmane.comp.lang.r.rosuda.devel/1284}. 
+  \url{http://ccl.northwestern.edu/netlogo/docs/faq.html#howbig} and rJava manual. 
 
   See the directory \code{examples} in the installation directory of the package for example codes to all RNetLogo functions.
 
