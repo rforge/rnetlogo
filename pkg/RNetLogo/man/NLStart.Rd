@@ -9,7 +9,7 @@
   or GUI mode. 
 }
 \usage{
-NLStart(nl.path, gui=TRUE, nl.obj=NULL, is3d=FALSE)
+NLStart(nl.path, gui=TRUE, nl.obj=NULL, is3d=FALSE, nl.jarname='netlogo-6.0.0.jar')
 }
 \arguments{
   \item{nl.path}{

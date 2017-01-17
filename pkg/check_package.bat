@@ -1,2 +1,2 @@
-RCMD check --no-multiarch RNetLogo_1.0-2.tar.gz
+RCMD check --no-multiarch RNetLogo_1.0-3.tar.gz
 
