@@ -54,7 +54,7 @@ See the tutorial published as Thiele (2014) for an introduction. Example codes f
   
   Thiele, J., Kurth, W., Grimm, V. (2012) RNetLogo: An R Package for Running and Exploring Individual-Based Models Implemented in NetLogo. Methods in Ecology and Evolution 3(3) 480-483.
   
-  R Core Team (2014) R: A Language and Environment for Statistical. R Foundation for Statistical Computing.Vienna, Austria. \url{http://www.R-project.org}.    
+  R Core Team (2014) R: A Language and Environment for Statistical. R Foundation for Statistical Computing.Vienna, Austria. \url{https://www.r-project.org}.    
   
   Wilensky, U. (1999) NetLogo. \url{http://ccl.northwestern.edu/netlogo/}. Center for Connected Learning and Computer-Based Modeling, Northwestern University. Evanston, IL.  
 }
