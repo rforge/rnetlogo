@@ -23,7 +23,9 @@ function(agent.var, agentset, as.data.frame=TRUE, agents.by.row=FALSE, as.vector
     if (length(agent.var) != 1) {
       stop("as.vector=TRUE makes only sense if you request just one agent variable.")
     }
-    avar <- c("map [[",agent.var,"] of ?] sort ", agentset)
+    # since NL 6.0
+	avar <- c("map [[?] -> [",agent.var,"] of ?] sort ", agentset)
+    #avar <- c("map [[",agent.var,"] of ?] sort ", agentset)
     avar <- paste(avar, collapse="")
     resobj <- NLReport(avar, nl.obj=nl.obj)  
   }
@@ -40,11 +42,15 @@ function(agent.var, agentset, as.data.frame=TRUE, agents.by.row=FALSE, as.vector
       # create an "old-style" list
       if (agents.by.row == TRUE) {
         avar <- lapply(agent.var, function(x) {paste(c("[",x,"] of ?"), collapse="")} )
-        avar <- c("map [(list ",avar,")] sort ", agentset)
+        # since NL 6.0
+		avar <- c("map [[?] -> (list ",avar,")] sort ", agentset)
+        #avar <- c("map [(list ",avar,")] sort ", agentset)
       } 
       # create a "new-style" list
       else {
-        avar <- lapply(agent.var, function(x) {paste(c("map [[",x,"] of ?] sort", agentset), collapse=" ")})
+        # since NL 6.0
+		avar <- lapply(agent.var, function(x) {paste(c("map [[?] -> [",x,"] of ?] sort", agentset), collapse=" ")})
+        #avar <- lapply(agent.var, function(x) {paste(c("map [[",x,"] of ?] sort", agentset), collapse=" ")})
         avar <- paste(c("(list",avar,")"), collapse=" ")
       }
       avar <- paste(avar, collapse="")
