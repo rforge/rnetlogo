@@ -32,8 +32,8 @@ function(patch.var, input, nl.obj=NULL)
       ycords_ <- paste("[", paste(input[['pycor']], sep=" ", collapse=" "), "]")
       zcords_ <- paste("[", paste(input[['pzcor']], sep=" ", collapse=" "), "]")
       var_ <- paste("[", paste(input[[patch.var]], sep=" ", collapse=" "), "]")
-	  # since NL 6.0
-	  ask_ <- paste("[[?1 ?2 ?3] -> ask patch ?1 ?2 [ set ", patch.var," ?3", sep="") 
+	    # since NL 6.0
+	    ask_ <- paste("[[?1 ?2 ?3] -> ask patch ?1 ?2 [ set ", patch.var," ?3", sep="") 
       #ask_ <- paste("[ ask patch ?1 ?2 ?3 [ set ", patch.var," ?4", sep="") 
       end_ <- " ]])"
       merged_ <- paste(start_, xcords_, ycords_, zcords_, var_, ask_, end_, sep="") 
@@ -49,7 +49,7 @@ function(patch.var, input, nl.obj=NULL)
     xcords_ <- paste("[", paste(input[['pxcor']], sep=" ", collapse=" "), "]")
     ycords_ <- paste("[", paste(input[['pycor']], sep=" ", collapse=" "), "]")
     var_ <- paste("[", paste(input[[patch.var]], sep=" ", collapse=" "), "]")
-	# since NL 6.0
+	  # since NL 6.0
     ask_ <- paste("[[?1 ?2 ?3] -> ask patch ?1 ?2 [ set ", patch.var," ?3", sep="") 
     #ask_ <- paste("[ ask patch ?1 ?2 [ set ", patch.var," ?3", sep="") 
     end_ <- " ]])"

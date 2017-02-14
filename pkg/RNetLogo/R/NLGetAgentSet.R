@@ -24,7 +24,7 @@ function(agent.var, agentset, as.data.frame=TRUE, agents.by.row=FALSE, as.vector
       stop("as.vector=TRUE makes only sense if you request just one agent variable.")
     }
     # since NL 6.0
-	avar <- c("map [[?] -> [",agent.var,"] of ?] sort ", agentset)
+	  avar <- c("map [[?] -> [",agent.var,"] of ?] sort ", agentset)
     #avar <- c("map [[",agent.var,"] of ?] sort ", agentset)
     avar <- paste(avar, collapse="")
     resobj <- NLReport(avar, nl.obj=nl.obj)  
@@ -32,7 +32,9 @@ function(agent.var, agentset, as.data.frame=TRUE, agents.by.row=FALSE, as.vector
   else {
     # create a data.frame
     if (as.data.frame == TRUE) { 
-      str <- lapply(agent.var, function(x) {paste("NLReport(\"map [[",x,"] of ?] sort ",agentset,"\",nl.obj=nl.obj)",sep="")})
+      # since NL 6.0
+      str <- lapply(agent.var, function(x) {paste("NLReport(\"map [[?] -> [",x,"] of ?] sort ",agentset,"\",nl.obj=nl.obj)",sep="")})
+      #str <- lapply(agent.var, function(x) {paste("NLReport(\"map [[?] -> [",x,"] of ?] sort ",agentset,"\",nl.obj=nl.obj)",sep="")})
       str <- paste(str, collapse=",")
       str <- paste("resobj <- data.frame(",str,")",sep=" ")
       eval(parse(text=str))  
@@ -43,7 +45,7 @@ function(agent.var, agentset, as.data.frame=TRUE, agents.by.row=FALSE, as.vector
       if (agents.by.row == TRUE) {
         avar <- lapply(agent.var, function(x) {paste(c("[",x,"] of ?"), collapse="")} )
         # since NL 6.0
-		avar <- c("map [[?] -> (list ",avar,")] sort ", agentset)
+		    avar <- c("map [[?] -> (list ",avar,")] sort ", agentset)
         #avar <- c("map [(list ",avar,")] sort ", agentset)
       } 
       # create a "new-style" list
